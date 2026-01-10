@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lolimtaco | Video Game Programmer</title>
+    <meta name="description"
+        content="Portfolio of a video game programming student specializing in Minecraft development, custom game systems, and interactive experiences.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">lolimtaco</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">lolimtaco</h1>
+            <p class="hero-subtitle">Video Game Programmer <span class="accent">|</span> Minecraft Creator</p>
+            <p class="hero-description">Creating immersive interactive experiences through code, custom game systems,
+                and 8+ years of Minecraft development.</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a third-year student at <strong>DePaul University</strong> majoring in Video Game Programming.
+                    My journey into game development started over 8 years ago with Minecraft, where I taught
+                    myself the game's domain-specific language and moved on to create complex game systems,
+                    boss battles, and interactive experiences using command blocks and datapacks.</p>
+                <p>What began as a hobby has evolved into a passion for creating engaging gameplay experiences. From
+                    running private servers with deep storylines to publishing adventure maps, I've developed a unique
+                    skillset that bridges creative game design with technical implementation.</p>
+                <p>Now I'm expanding into traditional game engines and C# development, bringing the same creativity and
+                    attention to detail that defined my Minecraft projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Featured Project -->
+            <div class="featured-project">
+                <div class="featured-badge">Featured Project</div>
+                <div class="project-card featured-expanded">
+                    <!-- Top 16x9 Image -->
+                    <div class="featured-hero-image">
+                        <img src="assets/images/tacosmp_16x9.png" alt="TacoSMP World Preview">
+                    </div>
+
+                    <div class="featured-content-grid">
+                        <!-- Poster Image (11x14 appx) -->
+                        <div class="featured-poster">
+                            <img src="assets/images/tacosmp_11x14.jpg" alt="TacoSMP Chapter 3 Concept Poster">
+                        </div>
+
+                        <!-- Project Info -->
+                        <div class="featured-info">
+                            <h3 class="project-title">TacoSMP</h3>
+                            <p class="project-duration">2021 - 2025 | 4+ Years of Development</p>
+                            <p class="project-description">My magnum opus: A private survival Minecraft server driven
+                                by deep lore, custom-coded boss battles, and ever-evolving storylines. What began as a
+                                simple
+                                multiplayer server for my friends grew into a multi-chapter saga involving complex
+                                datapack APIs and team-based
+                                development. The third and final chapter was unfortunately cancelled mid-development in
+                                order to focus on my career.</p>
+                            <div class="project-tags">
+                                <span class="tag">Datapacks</span>
+                                <span class="tag">Custom APIs</span>
+                                <span class="tag">3D Modeling</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">Team Leadership</span>
+                            </div>
+
+                            <div class="featured-actions">
+                                <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                                    class="btn btn-primary">Watch Project Showcase</a>
+                            </div>
+
+                            <!-- "What If?" Animated Series Section -->
+                            <div class="featured-subsection">
+                                <h4><span class="accent">Next Up:</span> TacoSMP "What If?" Series</h4>
+                                <p class="subsection-text">An animated series inspired by Marvel's <em>What If?</em>,
+                                    showcasing my 3D animation skills within the 'Mine-imator' engine.</p>
+                                <a href="https://www.youtube.com/playlist?list=PLE0Hb4256EB7e05jhc78JMvOLK2rjjSTC"
+                                    target="_blank" class="btn btn-secondary">Watch The Animated Series</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minecraft Projects -->
+            <h3 class="projects-category">Minecraft Projects</h3>
+            <div class="projects-grid">
+                <!-- MCRoleplay -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">MCRP</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">MCRoleplay (MCRP)</h3>
+                        <p class="project-duration">4+ Years | Ongoing</p>
+                        <p class="project-description">A creative mode server featuring deep lore and custom-coded
+                            events. Served as a testing ground for TacoSMP's custom item and boss APIs, allowing
+                            experimentation with a playerbase without working around live updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Datapacks</span>
+                            <span class="tag">3D Modeling</span>
+                            <span class="tag">Animation</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+
+                <!-- AvA in MC -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/ava_16x9.png" alt="AvA in MC Gameplay">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AvA in MC</h3>
+                        <p class="project-duration">Work in Progress</p>
+                        <p class="project-description">A tribute to Alan Becker's Animator vs Animation series. Bringing
+                            the
+                            stick figures to Minecraft as polished, survival-friendly boss encounters.</p>
+                        <div class="project-tags">
+                            <span class="tag">Datapacks</span>
+                            <span class="tag">Boss Design</span>
+                            <span class="tag">3D Animation</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+
+                <!-- Call of The Void -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/cotv_16x9.png" alt="Call of The Void Gameplay">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Call of The Void</h3>
+                        <p class="project-duration">Published on MinecraftMaps.com</p>
+                        <p class="project-description">A fully functional combat game built in Minecraft with only
+                            command
+                            blocks, recreating the Undertale fan-game "Call of The Void."</p>
+                        <div class="project-tags">
+                            <span class="tag">Command Blocks</span>
+                            <span class="tag">Solo Project</span>
+                            <span class="tag">Published</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Engine Projects -->
+            <h3 class="projects-category">Game Engine Projects</h3>
+            <div class="projects-grid">
+                <!-- Hollow Knight Platformer -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/hk_16x9.png" alt="Fallen Temple Gameplay">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fallen Temple</h3>
+                        <p class="project-duration">School Project | Team Collaboration</p>
+                        <p class="project-description">A small platformer inspired by Hollow Knight, giving me a
+                            view of the game development process in a team environment.</p>
+                        <div class="project-tags">
+                            <span class="tag">Team Project</span>
+                            <span class="tag">Platformer</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Unity</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+
+                <!-- Space Invaders -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/si_16x9.png" alt="Space Invaders: Rebooted Gameplay">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Space Invaders: Rebooted</h3>
+                        <p class="project-duration">School Project</p>
+                        <p class="project-description">A classic arcade remake with a strategic twist: a custom power-up
+                            system that changes how players approach each wave.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arcade</span>
+                            <span class="tag">Power-ups</span>
+                            <span class="tag">Solo Project</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+
+                <!-- Risk of Rain 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/ror2_16x9.png" alt="Risk of Rain 2 Modding">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Risk of Rain 2 Modding</h3>
+                        <p class="project-duration">In Progress</p>
+                        <p class="project-description">Learning C# by creating content for Risk of Rain 2, applying game
+                            design principles to an existing codebase.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Modding</span>
+                            <span class="tag">Learning</span>
+                        </div>
+                        <a href="https://www.youtube.com/@lolimtaco" target="_blank"
+                            class="btn btn-secondary project-link">Watch Showcase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Languages & Syntax</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Minecraft Commands</span>
+                            <span class="skill-level">8+ years</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Game Engines & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Unreal Engine</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Blockbench</span>
+                            <span class="skill-level">Modeling & Animation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Creative Software</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Photoshop</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Illustrator</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Premiere Pro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Team Leadership</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Game Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI Prompt Engineering</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Technical Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">Interested in working together or want to learn more about my projects? Feel
+                free to reach out!</p>
+            <div class="contact-links">
+                <a href="https://github.com/lolimtaco" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/@lolimtaco" class="contact-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    YouTube
+                </a>
+                <a href="mailto:lolimtaco@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" class="contact-icon">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 lolimtaco. Designed with Antigravity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
