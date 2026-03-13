@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Rooms | lolimtaco</title>
+    <meta name="description"
+        content="Showcase and Process for Project Rooms - A puzzle game inspired by 'The Room' developed in Unreal Engine.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 40px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-detail-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .project-detail-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-detail-meta {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+        }
+
+        .project-detail-content h3 {
+            font-size: 1.75rem;
+            color: var(--text-primary);
+            margin-top: 48px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html#hero" class="nav-logo">lolimtaco</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="container">
+            <!-- Header -->
+            <div class="project-detail-header">
+                <h1 class="project-detail-title">Project Rooms</h1>
+                <p class="project-detail-meta">School Project <span class="accent">|</span> Unreal Engine <span
+                        class="accent">|</span> Level Design</p>
+                <a href="index.html#projects" class="btn btn-secondary">&larr; Back to Projects</a>
+            </div>
+
+            <!-- Video Embed -->
+            <div class="video-container">
+                <!-- Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual ID from your YouTube video link -->
+                <!-- e.g. for https://www.youtube.com/watch?v=dQw4w9WgXcQ the ID is dQw4w9WgXcQ -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sJFJ54CzVqI?si=Ko8QorHbTkxAWztS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- About the Process -->
+            <div class="about-content project-detail-content" style="max-width: 1000px; margin: 0 auto;">
+
+                <h3>Project Overview</h3>
+                <p>
+                    <strong>Project Rooms</strong> is a small puzzle game inspired by <em>The Room</em> that I created
+                    for
+                    my Intro to Level Design class at DePaul through Unreal Engine.
+                </p>
+
+                <h3>Concept & Goals</h3>
+                <p>
+                    Project Rooms is a first person single player puzzle game set in a dark, abandoned medieval house.
+                    Inspired by the mobile game series <em>The Room</em>, the player starts the level inside the house,
+                    with no
+                    memory of
+                    how they arrived and must solve a series of interconnected puzzles across four rooms in order to
+                    locate keys, unlock doors, and ultimately escape through the front door and complete the game.
+                    <br>
+                    <br>
+                    The core design goal was to create a puzzle experience where each room builds on the last,
+                    with items and clues carrying over between spaces to reward exploration and careful observation.
+                    Environmental storytelling was also done through a series of in-world notes written by a seemingly
+                    former resident of the house, guiding the player without directly explaining puzzles. The intended
+                    mood was tense and
+                    atmospheric; a cold, dark space that feels lived in but long abandoned.
+                </p>
+
+                <h3>Key Challenges</h3>
+                <p>
+                    The project presented several design and technical challenges throughout development.
+                    <br><br>
+                    The most significant early challenge was scope management. Coming into this project with limited
+                    Unreal Engine
+                    Blueprint experience, the original vision was closer to the complexity of the original game, with
+                    object focus mechanics and more in-depth
+                    puzzle interactions. After exploring Unreal and figuring out what I was comfortable doing, the
+                    design was scaled to what was achievable for me, a
+                    decision that led to a more focused and polished final product.
+                    <br><br>
+                    On the technical side, one recurring challenge was Unreal's separation of an object's visual and
+                    physical state.
+                    Hiding an actor using Set Actor Hidden in Game does not disable its collision, which caused issues
+                    where invisible objects still blocked the player's line trace and prevented key pickups. This
+                    required specifically pairing every visibility toggle with a Set Actor Enable Collision block as
+                    well.
+                    Another problem I encountered was that plugging array search results directly into Branch
+                    conditions produced incorrect/unexpected
+                    results due to Unreal's integer-to-boolean conversion, where -1 was being read as True. The
+                    fix required simply comparing the array search results to -1 using a Not Equal node.
+                    <br><br>
+                    Playtest feedback also brought important readability issues for my level. Players could not clearly
+                    distinguish
+                    between a locked and unlocked door due to similar sound effects, and spotlights left behind after
+                    key pickups were misleading players back to empty spots. Both issues were identified and resolved
+                    before the final version of the project.
+                </p>
+
+                <h3>Design & Technical Solutions</h3>
+                <p>
+                    The puzzle structure was designed to increase in difficulty, starting with one simple puzzle for the
+                    first two rooms, and two chained puzzles for the final two. Later a decision was made to include
+                    items in the level to make things feel more like the inspiration. This change allowed me to do more
+                    interesting things like
+                    make the player backtrack between the bedroom and the
+                    closet to find an emblem needed to open the final chest. This gave the game a sense of complexity
+                    and made earning the final key feel more earned.
+                    <br><br>
+                    A central Puzzle Manager Blueprint was built to act as the brain of the entire system, handling
+                    puzzle state, array sequence tracking, actor visibility toggling, and reset logic across all rooms.
+                    This kept individual object Blueprints simple and communication clean. Blueprint Interfaces were
+                    used to connect interactable objects to the player's existing line trace interaction system without
+                    requiring heavy modification of the player character directly.
+                    <br><br>
+                    The UI was implemented using Widget Blueprints with a dedicated title screen camera pointing at the
+                    main table with the note in the first room, and a win screen triggered by a box trigger volume at
+                    the front door,
+                    complete with a camera fade transition. Audio was added as a looping ambient Sound Cue playing
+                    through the entire level to reinforce the eerie atmospheric mood.
+                    <br><br>
+                    Level readability was improved through deliberate lighting decisions, spotlights attached directly
+                    to key objects so they disappear on pickup, warm candle lighting to eliminate sourceless ambient
+                    light, and distinct floor materials used to differentiate doorway spaces from room interiors.
+                </p>
+
+                <h3>Conclusion</h3>
+                <p>
+                    Project Rooms was a valuable learning experience that taught me a lot about puzzle design, level
+                    design, and Blueprint scripting in Unreal Engine. I'm proud of what I was able to create, and I'm
+                    excited to continue learning and growing as a game developer, moving onwards from my Minecraft
+                    projects.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 lolimtaco. Designed with Antigravity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
